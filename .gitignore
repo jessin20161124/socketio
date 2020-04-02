@@ -1,0 +1,41 @@
+﻿# kdiff3 ignore
+*.orig
+
+# maven ignore
+target/
+classes/
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+# package ignore (optional)
+# *.jar
+# *.war
+# *.zip
+# *.tar
+# *.tar.gz
+
+# deploy shell
+zz_dev_deploy_gongdan.sh
+# maintain shell
+fretch_url_gongdan.sh
+/monitor
