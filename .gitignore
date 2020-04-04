@@ -15,6 +15,10 @@ classes/
 *.ipr
 *.iml
 *.iws
+.mvn/
+HELP.md
+mvnw
+mvnw.cmd
 
 # temp ignore
 *.log
