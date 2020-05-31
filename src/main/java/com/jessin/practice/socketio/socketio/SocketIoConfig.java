@@ -47,6 +47,8 @@ public class SocketIoConfig {
         SocketConfig socketConfig = new SocketConfig();
         socketConfig.setTcpNoDelay(true);
         socketConfig.setSoLinger(0);
+        // todo 允许复用
+        socketConfig.setReuseAddress(true);
         com.corundumstudio.socketio.Configuration config = new com.corundumstudio.socketio.Configuration();
         config.setSocketConfig(socketConfig);
         config.setHostname(host);
@@ -54,6 +56,8 @@ public class SocketIoConfig {
         config.setBossThreads(bossCount);
         config.setWorkerThreads(workCount);
         config.setAllowCustomRequests(allowCustomRequests);
+        // 自定义路径，默认是/socket.io
+//        config.setContext();
         config.setUpgradeTimeout(upgradeTimeout);
         config.setPingTimeout(pingTimeout);
         config.setPingInterval(pingInterval);

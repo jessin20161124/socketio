@@ -45,6 +45,7 @@
         });
         socket.on('push_event', function (data) {
             output('<span class="username-msg">' + data + ' </span>');
+            socket.emit("push_event", "我来了")
             console.log(data);
         });
 
